@@ -10,8 +10,19 @@ void Display();
 
 int main()
 {
+    int choice;
     cout << "Welcome to SMART AGRICULTURE test sensor Program" << endl;
-
+    cout << "System Start " << endl;
+    cout << "INITIAL DATA DISPLAY" << endl;
+    //call function show()
+    cout << "What do you want to do?" << endl;
+    cout << "Initial Data - (PRESS 1)"<< endl;
+    cout << "Input Value - (PRESS 2)" << endl;
+    cout << "Show Temperature - (PRESS 3)"<< endl;
+    cout << "Show Humidity - (PRESS 4)"<< endl;
+    cout << "Show Camera Live View - (PRESS 5)"<< endl;
+    cout << "Switch ON/OFF water valve - (PRESS 6)"<< endl;
+    cout << "Show All the DATA - (PRESS 7)"<< endl;
     return 0;
 }
 InitALL(int Num)
@@ -20,31 +31,32 @@ InitALL(int Num)
 }
 ReadTemp(float Tmp) //溫度要能儲存小數點
 {
+    /*true=success;
     if(success)
         return 0;
     else
-        return -1;
+        return -1;*/
 }
 ReadHumidity(float Hum) //ex. 60.5%
 {
-    if(success)
+    /*if(success)
         return 0;
     else
-        return -1;
+        return -1;*/
 }
 ReadCamera(char Pixel)//
 {
-   if(success)
+   /*if(success)
         return 0;
     else
-        return -1;
+        return -1;*/
 }
-OnOff(int I/O)
+OnOff(int Input,int Output)
 {
-    if(success)
+    /*if(success)
         return 0;
     else
-        return -1;
+        return -1;*/
 }
 Show(int CLASS)
 {
