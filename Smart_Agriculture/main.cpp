@@ -8,6 +8,8 @@ void OnOff();
 void Show();
 void Display();
 
+
+
 int main()
 {
     int choice;
@@ -23,6 +25,28 @@ int main()
     cout << "Show Camera Live View - (PRESS 5)"<< endl;
     cout << "Switch ON/OFF water valve - (PRESS 6)"<< endl;
     cout << "Show All the DATA - (PRESS 7)"<< endl;
+    switch (choice)
+    {
+        case 1;
+        InitAll();
+        break;
+
+        case 2;
+        // call function for input to class
+        case 3;
+        ReadTemp();
+        break;
+
+        case 4;
+        // show temperature in class
+        case 5;
+        // show camera live view pixel data from class
+        case 6;
+        // switch the value
+        case 7;
+        // display everything from class
+
+    }
     return 0;
 }
 InitALL(int Num)
