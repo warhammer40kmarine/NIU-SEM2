@@ -31,5 +31,8 @@ int main()
     //cout << "Name=" << sample.EngName<< endl;
 
     cout << "sizeof(sample)="<< sizeof(sample);
+
+
+
     return 0;
 }
