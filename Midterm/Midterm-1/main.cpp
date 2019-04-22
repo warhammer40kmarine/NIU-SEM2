@@ -23,7 +23,9 @@ struct time_2
         double seconds;
 
     }elapse;
-int calculate(int ihour,int iminutes,double iseconds,int ehour,int eminutes,double eseconds)
+
+    //FUNCTION TO CALCULATE THE DIFFERENCE
+int calculate(int ihour,int iminutes,double iseconds,int ehour,int eminutes,double eseconds) // SEC->MIN->HOUR->DAYS->MONTHS->YEARS
 {
     int tmp_hr=0,tmp_min=0,tmp_sec=0;
     //hr
@@ -54,7 +56,7 @@ int calculate(int ihour,int iminutes,double iseconds,int ehour,int eminutes,doub
         elapse.minutes=59;}
 
 }
-int main()
+int main() // MAIN CODE
 {
     //initial value
     start.hour=12;
