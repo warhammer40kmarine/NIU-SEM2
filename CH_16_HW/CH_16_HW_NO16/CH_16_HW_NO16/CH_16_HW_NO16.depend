@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1556852228 source:c:\users\myste\documents\github\niu-sem2\ch_16_hw\ch_16_hw_no16\ch_16_hw_no16\main.cpp
+	<iostream>
+	<cstdlib>
+
