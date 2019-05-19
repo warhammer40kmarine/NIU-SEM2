@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1558228757 source:c:\users\myste\documents\github\niu-sem2\107-2-poker game\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
