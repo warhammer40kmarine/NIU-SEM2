@@ -27,6 +27,7 @@ void InitialCard(string *ptr)
                 ptr[13*i0+i1]+='0'+i1;
         }
     }
+    return;
 }
 void Shuffle(string *ptr,int n)// n=shuffle times
 {
@@ -41,6 +42,7 @@ void Shuffle(string *ptr,int n)// n=shuffle times
             return;
         }
     }
+    return;
 }
 void ShowAllCards(string *ptr,int n,int k)// n=total card numbers, k=cards in every roll
 {
@@ -59,10 +61,12 @@ void ShowAllCards(string *ptr,int n,int k)// n=total card numbers, k=cards in ev
         }
         cout<< endl;
     }
+    return;
 }
 void ShowOneCard(int n)
 {
     cout << ptr_card[n];
+    return;
 }
 
 int main()
