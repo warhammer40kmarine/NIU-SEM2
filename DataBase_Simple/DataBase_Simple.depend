@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1559449468 source:c:\users\daniel-dell-optiplex\documents\github\niu-sem2\database_simple\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+
