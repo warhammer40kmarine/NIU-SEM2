@@ -28,6 +28,8 @@ int main()
     string meal;
     string style;
     string response;
+    string Y="Y";
+    string N;
     // declare
     class database data[NUM];
     for (num=0;num<NUM;num++)//initial database
@@ -69,20 +71,20 @@ int main()
     cout << "NO" << '\t' << "Radius" << '\t' << "Meal" <<'\t'<<'\t'<< "Style" <<'\t'<<'\t'<< "Price" << endl;
         for (int i=0;i<NUM;i++)
         {
-            cout << i <<"|" <<'\t'<<data[i].r<<'\t'<< data[i].m<<'\t'<<'\t'<<data[i].s<<'\t'<<'\t'<<data[i].p <<endl;
+            cout << i <<"." <<'\t'<<data[i].r<<'\t'<< data[i].m<<'\t'<<'\t'<<data[i].s<<'\t'<<'\t'<<data[i].p <<endl;
         }
     cout << endl;
     // Review function
     cout << "Do you want to leave any reviews to this restaurant?(Y/N)";cin >> response;
-    if (response=(string)Y)
+    if (response==Y)
     {
-
+        cout << "Call the function" << endl;
     }
     else
     {
-
+            cout << "Thank you for using the service" << endl;
     }
     cout << endl;
-    cout << "test" << << data[0].r <<  data[0].p << data[0].m<< data[0].s <<endl;
+    cout << "test" << '\t' <<data[0].r <<'\t' <<  data[0].p <<'\t' << data[0].m<<'\t' << data[0].s <<endl;
     return 0;
 }
