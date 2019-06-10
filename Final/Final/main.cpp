@@ -11,6 +11,7 @@ class database
     string m;
     string s;
     string res;
+    string Y;
 };
 /*void show_results(void)
 {
@@ -74,7 +75,7 @@ int main()
     cout << endl;
     // Review function
     cout << "Do you want to leave any reviews to this restaurant?(Y/N)";cin >> response;
-    if (response=(string)Y)
+    if (response=Y)
     {
 
     }
