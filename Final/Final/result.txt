@@ -1,0 +1,6 @@
+"NO" "Radius" 	"Meal"  	"Style"  	"Price"
+1	5	Lunch		Western		500
+2	6	Breadfast	Japanese	1000
+3	4	Dinner		Italian		2000
+4	2	Dinner		Western		1500
+5	1	Lunch		Chinese		200

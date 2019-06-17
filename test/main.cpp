@@ -2,7 +2,7 @@
 #include <string>
 #include <cstdlib>
 using namespace std;
-union test
+/*union test
     {
         //char EngName;
         int number;
@@ -33,6 +33,28 @@ int main()
     cout << "sizeof(sample)="<< sizeof(sample);
 
 
+
+    return 0;
+}*/
+#include <string>
+#include <vector>
+#include <fstream>
+using namespace std;
+
+int main(){
+    ifstream in("test.txt");
+    string inputStr;
+    std::vector inputContent;
+    while(getline(in, inputStr)){
+        inputContent.push_back(inputStr);
+    }
+    in.close();
+
+    ofstream out("output.txt");
+    for(int i=0; i < inputContent.size(); i++){
+        out << inputContent[i] << endl;
+    }
+    out.close();
 
     return 0;
 }
