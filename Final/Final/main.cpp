@@ -29,7 +29,7 @@ class database_2
 void ShowDB();
 string searchDB();
 void displayDB();
-
+string response();
 int main()
 {
     int radius;
@@ -102,26 +102,30 @@ int main()
     cout << endl;
     cout << "PERFECT! NOW LET THE PROGRAM PROCESS A WHILE"<< endl;
     //functions
-    string searchDB();
+    string searchDB(database_1 data,database_2 GoogleMapData);
 
 
     //use functions to find compare input string to database if found= output search result
 
     // show the results
-    void showDB(database_1 data[]);
+    void showDB(database_2 GoogleMapData[NUM]);
 
     // Review function
     cout << "Do you want to leave any reviews to this restaurant?(Y/N)";cin >> response;
 
     if (response==Y)
     {
-        cout << "Call the function" << endl;
+        string res;
+        cout << "Leave your response (Good/Bad)";(cin >>res).get();getline(cin,res);
+        string response(res);
+        cout << "Thank you for using the service" << endl;
     }
     else
     {
         cout << "Thank you for using the service" << endl;
     }
     cout << endl;
+
     cout << "test" << '\t' <<data[0].r <<'\t' <<  data[0].p <<'\t' << data[0].m<<'\t' << data[0].s <<endl;
     return 0;
 }
@@ -146,3 +150,10 @@ int main()
         }
     }
     //int searchDB_R(database_1 data[NUM],database_2 GoogleMapData[NUM])
+    string response(string res,database_1 data[],database_2 GoogleMapData[])
+    {
+        string response;
+        response=res;
+        for (int i=0;i<NUM;i++)
+            data[i].res=res;
+    }
